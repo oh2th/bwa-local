@@ -1,6 +1,6 @@
 {
-  "name": "bwa-local",
-  "version": "1.0.0",
+  "name": "@oh2th/bwa-local",
+  "version": "0.9.0",
   "description": "Node.js module to communicate with a Balboa spa WiFi adapter. Based on pybalboa by Nathan Spencer and Tim Rightnour.",
   "main": "index.js",
   "type": "module",
@@ -16,10 +16,17 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oh2th/bwa.git"
+    "url": "https://github.com/oh2th/bwa-local.git"
   },
+  "bugs": {
+    "url": "https://github.com/oh2th/bwa-local/issues"
+  },
+  "homepage": "https://github.com/oh2th/bwa-local#readme",
   "engines": {
     "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "test": "node --test node-tests/*.test.js"

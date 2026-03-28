@@ -7,7 +7,14 @@ This is a Node.js implementation based on [pybalboa](https://github.com/garbled1
 ## Installation
 
 ```bash
-npm install bwa-local
+npm install @oh2th/bwa-local
+```
+
+If you are installing from GitHub Packages, configure npm auth first:
+
+```bash
+echo "@oh2th:registry=https://npm.pkg.github.com" >> ~/.npmrc
+echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
 ```
 
 ## Usage
@@ -187,3 +194,22 @@ The Balboa spa protocol uses TCP port 4257 for control and UDP port 30303 for di
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Publishing
+
+This package is configured to publish to GitHub Packages.
+
+1. Create a GitHub token with `write:packages` and `repo` scopes.
+1. Set your local npm auth token:
+
+```bash
+export NODE_AUTH_TOKEN=YOUR_GITHUB_TOKEN
+```
+
+1. Publish:
+
+```bash
+npm publish
+```
+
+Publishing from CI is also supported through `.github/workflows/publish.yml`.
