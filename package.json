@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@oh2th/bwa-local",
   "version": "0.9.0",
   "description": "Node.js module to communicate with a Balboa spa WiFi adapter. Based on pybalboa by Nathan Spencer and Tim Rightnour.",
